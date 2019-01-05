@@ -1,2 +1,2 @@
 # FIS_PROJECT
-This is the project from Distributed Automation Systems Design.
+This is the project from Factory information system
