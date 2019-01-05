@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    body {
+        background-color: whitesmoke;
+        font-family: Arial;
+        font-weight: normal;
+    }
+    h1 {
+        color: black;
+        font-family:courier
+    }
+    p {
+        color: black;
+        font-family: Verdana
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>DB query</title>
+</head>
+<body>
+<% include templates/navigation.ejs %>
+
+<h1 style="background-color:blue;color:white;text-align:center;">MYSQL database query</h1>
+<p style="padding:10px;"></p>
+<h2 style=color:black;text-align:left;">Insert query:</h2>
+<br>
+
+<form action="/dbQueryPost" method="post">
+    Query: <input type="text" name="queryField" size="55"><br>
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+<form action="/dbQueryPost" method="post">
+    Show all orders: <input type="submit" name="query"  value="Orders"><br>
+</form>
+
+<br>
+<form action="/dbQueryPost" method="post">
+    Show orders: Last 7 days: <input type="submit" name="query"  value="Last 7"><br>
+</form>
+
+<br>
+<form action="/dbQueryPost" method="post">
+    Products in Production: <input type="submit" name="query"  value="Production"><br>
+</form>
+
+<br>
+<form action="/dbQueryPost" method="post">
+    Shipped products: <input type="submit" name="query"  value="Shipped"><br>
+</form>
+
+<br>
+
+<form action="/dbQueryPost" method="post">
+    Customers, orders in production : <input type="submit" name="query"  value="CustOrdInPro"><br>
+</form>
+
+<br>
+
+<form action="/dbQueryPost" method="post">
+    Check Customer's orders: INSERT NAME: <input type="text" name="queryName" ><br>
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+
+</body>
+</html>

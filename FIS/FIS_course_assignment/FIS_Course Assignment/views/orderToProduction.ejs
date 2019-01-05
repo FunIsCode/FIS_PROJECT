@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order to production</title>
+</head>
+
+<body>
+<% include templates/navigation.ejs %>
+
+<h1 style="background-color:blue;color:white">Order to production</h1>
+<br>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 40%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+</style>
+
+<% for(var i = 0; i < data.length; i++){ %>
+<p><%= data[i] %></p>
+<% } %>
+
+</body>
+</html>

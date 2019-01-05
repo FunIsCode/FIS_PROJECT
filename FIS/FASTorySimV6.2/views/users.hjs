@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!--<script type="text/javascript">
+			var uri = window.location.toString();
+			if (uri.indexOf("?") > 0) {
+				var clean_uri = uri.substring(0, uri.indexOf("?"));
+				window.history.replaceState({}, document.title, clean_uri);
+			}
+		</script>-->
+		<script>
+		console.log('{{HostName}}')
+			if (!library)
+				var library = {};
+
+			library.json = {
+				replacer: function(match, pIndent, pKey, pVal, pEnd) {
+					var key = '<span class=json-key>';
+					var val = '<span class=json-value>';
+					var str = '<span class=json-string>';
+					var bool = '<span class=json-bool>';
+					var url = '<span class=json-url><a class=refJson href=';
+					var r = pIndent || '';
+					if (pKey)
+						r = r + key + pKey.replace(/[": ]/g, '') + '</span>: ';
+					if (pVal)
+					{
+						if(pVal[0] == '"' && pVal.substring(0,5) != '"http')
+							r = r +  str  + pVal + '</span>';
+						else if(pVal.substring(0,5) == '"http')
+							r = r +  url + '{{HostName}}/RTUs?url=' + pVal.replace(/"/g,'') +  '>' + pVal + '</a></span>';
+						else if(pVal== 'true' ||pVal== 'TRUE' ||pVal== 'false' ||pVal== 'FALSE' )
+							r = r +  bool + pVal + '</span>';
+						else
+							r = r +  val  + pVal + '</span>';
+					}
+					return r + (pEnd || '');
+				},
+				prettyPrint: function(obj) {
+					var jsonLine = /^( *)("[\w]+": )?("[^"]*"|[\w.+-]*)?([,[{])?$/mg;
+					return JSON.stringify(obj, null, 3)
+					.replace(/&/g, '&amp;').replace(/\\"/g, '&quot;')
+					.replace(/</g, '&lt;').replace(/>/g, '&gt;')
+					.replace(jsonLine, library.json.replacer);
+				}
+			};
+			var Obj1 = JSON.parse('{{test}}'.replace(/&quot;/g,'"'));
+			$( document ).ready(function() {
+				$('#json pre').html(library.json.prettyPrint(Obj1));
+				$('#URL pre').html('{{baseUrl}}');
+			});
+		</script>
+	</head>
+	<body>
+		<div style="background-color:#0066dd; width:100% ;height:70px;text-align: center;">
+			<img src="tty-logo-TTYINTERNETEN-png.png" alt="Logo" style="width:400px;height:70px;float: left">
+			<img src="eScoplogo-white.png" alt="Logo" title="escop-project.com" style="width:194px;height:70px;float: right; cursor:pointer;">
+			<h1 style="font-family:Verdana;font-size:420%;color:#ffffff;height:100%;position: relative;margin-top: 0em;margin-bottom: 0em;align:justify">FASTory Simulator</h1>
+		</div>
+		<div id="main">
+			<div id="hmenu"> 
+				<ul> 
+					<li><a href="/" >Main Page</a></li> 
+					<li>|</li>
+					<li><a href="/fmw">Simulator Interface</a></li> 
+					<li>|</li>
+					<li><a href="/RTUs?url={{HostName}}/RTU" style="border:1px solid #0066dd;">RTUs</a></li> 
+					<li>|</li>
+					<li><a href="/instructions">Instructions</a></li> 
+					<li>|</li>
+					<li><a href="/License">License Agreement</a></li> 
+					<li>|</li>
+					<li><a href="/about" >About</a></li> 
+					<li>|</li>
+					<li><a href="/contacts">Contacts</a></li>
+				</ul>  
+			</div>	
+			<div>
+				<h1 style="font-family:Verdana;font-size:300%;color:#000000;">{{ title }} </h1>
+			</div>
+				<div id="URL" >
+					<pre></pre>
+				</div>
+				<br/>
+				<div id="json" >
+					<pre>"Hi I am text"</pre>
+				</div>
+				<br/>
+			<div id="hmenu"> 
+				<ul> 
+					<li><a href="/" >Main Page</a></li> 
+					<li>|</li>
+					<li><a href="/fmw">Simulator Interface</a></li> 
+					<li>|</li>
+					<li><a href="/RTUs?url={{HostName}}/RTU" style="border:1px solid #0066dd;">RTUs</a></li> 
+					<li>|</li>
+					<li><a href="/instructions">Instructions</a></li> 
+					<li>|</li>
+					<li><a href="/License">License Agreement</a></li> 
+					<li>|</li>
+					<li><a href="/about">About</a></li> 
+					<li>|</li>
+					<li><a href="/contacts">Contacts</a></li>
+				</ul>  
+			</div><br>
+			<div style="text-align:center;color:#0066dd">
+				<h3>Copyright (c) 2016 Tampere University of Technology</h3>
+				<h4>All Rights Reserved</h4>
+			</div>				
+		</div>
+	</body>
+</html>

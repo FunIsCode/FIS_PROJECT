@@ -1,0 +1,9 @@
+ {
+        "id": "notifsID",
+        "links": {
+            "self": "HostName/RTUID/notifs",
+            "info": "HostName/RTUID/notifs/info"
+        },
+        "class": "notifs",
+		"children":{}
+    }

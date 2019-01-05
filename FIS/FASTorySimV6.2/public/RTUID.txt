@@ -1,0 +1,42 @@
+{
+    "id": "RTUID",
+    "links": {
+        "self": "HostName/RTUID",
+        "info": "HostName/RTUID/info"
+    },
+    "class": "escopRTU",
+    "children": {
+        "data": {
+            "id": "data",
+            "links": {
+                "self": "HostName/RTUID/data",
+                "info": "HostName/RTUID/data/info"
+            },
+            "class": "data"
+        },
+        "notifs": {
+            "id": "notifs",
+            "links": {
+                "self": "HostName/RTUID/notifs",
+                "info": "HostName/RTUID/notifs/info"
+            },
+            "class": "notifs"
+        },
+        "events": {
+            "id": "events",
+            "links": {
+                "self": "HostName/RTUID/events",
+                "info": "HostName/RTUID/events/info"
+            },
+            "class": "events"
+        },
+        "services": {
+            "id": "services",
+            "links": {
+                "self": "HostName/RTUID/services",
+                "info": "HostName/RTUID/services/info"
+            },
+            "class": "services"
+        }
+    }
+}

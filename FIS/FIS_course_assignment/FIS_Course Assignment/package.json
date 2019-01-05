@@ -1,0 +1,17 @@
+{
+  "name": "FIS_course_assignment",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "Assignment",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "latest",
+    "express": "latest",
+    "moment": "latest",
+    "mysql": "2.13.0",
+    "request": "latest",
+    "xml-writer": "latest",
+    "xml2js": "latest",
+    "xsd-schema-validator": "0.5.0"
+  }
+}

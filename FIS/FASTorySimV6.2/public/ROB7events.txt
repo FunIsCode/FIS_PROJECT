@@ -1,0 +1,33 @@
+{
+        "id": "events",
+        "links": {
+            "self": "HostName/SimROB7/events",
+            "info": "HostName/SimROB7/events/info",
+			"parent":"HostName/SimROB7"
+        },
+        "class": "events",
+        "children": {
+            "PalletLoaded": {
+                "id": "PalletLoaded",
+                "links": {
+                    "self": "HostName/SimROB7/events/PalletLoaded",
+                    "info": "HostName/SimROB7/events/PalletLoaded/info",
+                    "notifs": "HostName/SimROB7/events/PalletLoaded/notifs",
+					"parent":"HostName/SimROB7/events"
+                },
+				"class":"event",
+				"children":{}
+            },
+            "PalletUnloaded": {
+                "id": "PalletUnloaded",
+                "links": {
+                    "self": "HostName/SimROB7/events/PalletUnloaded",
+                    "info": "HostName/SimROB7/events/PalletUnloaded/info",
+                    "notifs": "HostName/SimROB7/events/PalletUnloaded/notifs",
+					"parent":"HostName/SimROB7/events"
+                },
+				"class":"event",
+				"children":{}
+            }
+        }
+    }

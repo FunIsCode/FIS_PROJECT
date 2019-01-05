@@ -1,0 +1,66 @@
+{
+        "id": "data",
+        "links": {
+            "self": "HostName/SimSimCNV1/data",
+            "info": "HostName/SimCNV1/data/info"
+        },
+        "class": "data",
+        "children": {
+            "P1": {
+                "id": "P1",
+                "links": {
+                    "self": "HostName/SimCNV1/data/P1",
+                    "info": "HostName/SimCNV1/data/P1/info"
+                },
+                "class": "data"
+            },
+            "P2": {
+                "id": "P2",
+                "links": {
+                    "self": "HostName/SimCNV1/data/P2",
+                    "info": "HostName/SimCNV1/data/P2/info"
+                },
+                "class": "data"
+            },
+            "P3": {
+                "id": "P3",
+                "links": {
+                    "self": "HostName/SimCNV1/data/P3",
+                    "info": "HostName/SimCNV1/data/P3/info"
+                },
+                "class": "data"
+            },
+            "S1": {
+                "id": "S1",
+                "links": {
+                    "self": "HostName/SimCNV1/data/S1",
+                    "info": "HostName/SimCNV1/data/S1/info"
+                },
+                "class": "data"
+            },
+            "S2": {
+                "id": "S2",
+                "links": {
+                    "self": "HostName/SimCNV1/data/S2",
+                    "info": "HostName/SimCNV1/data/S2/info"
+                },
+                "class": "data"
+            },
+            "S3": {
+                "id": "S3",
+                "links": {
+                    "self": "HostName/SimCNV1/data/S3",
+                    "info": "HostName/SimCNV1/data/S3/info"
+                },
+                "class": "data"
+            },
+            "RFID": {
+                "id": "RFID",
+                "links": {
+                    "self": "HostName/SimCNV1/data/RFID",
+                    "info": "HostName/SimCNV1/data/RFID/info"
+                },
+                "class": "data"
+            }
+        }
+    }

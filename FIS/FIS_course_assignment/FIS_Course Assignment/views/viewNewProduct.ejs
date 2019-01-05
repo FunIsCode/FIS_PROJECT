@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+</head>
+
+<body>
+<% include templates/navigation.ejs %>
+
+<h1 style="background-color:blue;color:white">Added Product</h1>
+<br>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 40%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+</style>
+
+<table>
+    <tr>
+        <th>Product Details</th>
+    </tr>
+    <tr>
+        <td>Order ID:</td>
+        <td><%= data.orderId %></td>
+    </tr>
+    <tr>
+        <td>Frame type:</td>
+        <td><%= data.frametype %></td>
+    </tr>
+    <tr>
+        <td>Frame Color:</td>
+        <td><%= data.framecolor %></td>
+    </tr>
+    <tr>
+        <td>Screen Type:</td>
+        <td><%= data.screentype %></td>
+    </tr>
+    <tr>
+        <td>Screen Color:</td>
+        <td><%= data.screencolor %></td>
+    </tr>
+    <tr>
+        <td>Keyboard Type:</td>
+        <td><%= data.keyboardtype %></td>
+    </tr>
+    <tr>
+        <td>Keyboard Color:</td>
+        <td><%= data.keyboardcolor %></td>
+    </tr>
+    <tr>
+        <td>Quantity:</td>
+        <td><%= data.quantity %></td>
+    </tr>
+</table>
+</body>
+</html>
+

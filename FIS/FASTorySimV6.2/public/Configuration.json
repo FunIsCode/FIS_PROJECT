@@ -1,0 +1,18 @@
+{
+	"Host" : "http://localhost",
+	"Port" : 3000,
+	"SocketPort1":3001,
+	"SocketPort2":3002,
+	
+	"listener" : {
+		"port" : 55556,
+		"group" : "239.0.0.1"
+	},
+	"sender" : {
+		"port" : 55555,
+		"group" : "239.0.1.1"
+	},
+	
+	"default_swagger" : "swagger",
+	"rtus": ["SimCNV1","SimCNV2","SimCNV3","SimCNV4","SimCNV5","SimCNV6","SimCNV7","SimCNV8","SimCNV9","SimCNV10","SimCNV11","SimCNV12", "SimROB1","SimROB2","SimROB3","SimROB4","SimROB5","SimROB6","SimROB7","SimROB8","SimROB9","SimROB10","SimROB11","SimROB12"]
+}

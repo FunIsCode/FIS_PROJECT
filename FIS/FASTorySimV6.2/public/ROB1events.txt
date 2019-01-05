@@ -1,0 +1,33 @@
+{
+        "id": "events",
+        "links": {
+            "self": "HostName/SimROB1/events",
+            "info": "HostName/SimROB1/events/info",
+			"parent":"HostName/SimROB1"
+        },
+        "class": "events",
+        "children": {
+            "PaperLoaded": {
+                "id": "PaperLoaded",
+                "links": {
+                    "self": "HostName/SimROB1/events/PaperLoaded",
+                    "info": "HostName/SimROB1/events/PaperLoaded/info",
+                    "notifs": "HostName/SimROB1/events/PaperLoaded/notifs",
+					"parent":"HostName/SimROB1/events"
+                },
+				"class":"event",
+				"children":{}
+            },
+            "PaperUnloaded": {
+                "id": "PaperUnloaded",
+                "links": {
+                    "self": "HostName/SimROB1/events/PaperUnloaded",
+                    "info": "HostName/SimROB1/events/PaperUnloaded/info",
+                    "notifs": "HostName/SimROB1/events/PaperUnloaded/notifs",
+					"parent":"HostName/SimROB1/events"
+                },
+				"class":"event",
+				"children":{}
+            }
+        }
+    }

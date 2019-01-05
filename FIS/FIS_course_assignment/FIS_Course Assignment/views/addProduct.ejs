@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+<meta charset="UTF-8">
+<title>FIS Course Assignment</title>
+
+<style>
+    body {
+        background-color: whitesmoke;
+        font-family: Arial;
+        font-weight: normal;
+    }
+    h1 {
+        color: black;
+    }
+    p {
+        color: black;
+        font-family: Verdana
+    }
+</style>
+
+<body>
+<% include templates/navigation.ejs %>
+
+<div class="container">
+    <div class="row row-header">
+        <div class="col-xs-12 col-sm-6 col-sm-push-8">
+            <h1 style="background-color:blue;color:white;font-family:courier;text-align:center;">Add Product to order</h1>
+            <p style="padding:20px;"></p>
+        </div>
+
+        <div class="col-xs-12 col-sm-8 col-sm-pull-4">
+            <form class="form-horizontal" role="form" action="/addProduct" method="post">
+
+                <label for="Order Details" class="col-sm-8"><h3><i>Insert order ID and product details</i></h3></label>
+                <div class="col-sm-8">
+
+                    <label for="Order Id" class="col-sm-6">Order ID</label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" name="orderId" min="1" placeholder="OrderID" required>
+                    </div>
+
+                    <label for="Frame type" class="col-sm-4">Frame type</label>
+                    <div class="col-sm-6">
+                        <select name="frametype" class="form-control">
+                            <option value="frame1">Frame1</option>
+                            <option value="frame2">Frame2</option>
+                            <option value="frame3">Frame3</option>
+                        </select>
+                    </div>
+
+                    <label for="frame color" class="col-sm-4">Frame color</label>
+                    <div class="col-sm-6">
+                        <select name="framecolor" class="form-control">
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+
+                    <label for="screen type" class="col-sm-4">Screen type</label>
+                    <div class="col-sm-6">
+                        <select name="screentype" class="form-control">
+                            <option value="screen1">Screen1</option>
+                            <option value="screen2">Screen2</option>
+                            <option value="screen3">Screen3</option>
+                        </select>
+                    </div>
+
+                    <label for="screen color" class="col-sm-4">Screen color</label>
+                    <div class="col-sm-6">
+                        <select name="screencolor" class="form-control">
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+
+
+                    <label for="keyboard type" class="col-sm-4">Keyboard type</label>
+                    <div class="col-sm-6">
+                        <select name="keyboardtype" class="form-control">
+                            <option value="keyboard1">Keyboard1</option>
+                            <option value="keyboard2">Keyboard2</option>
+                            <option value="keyboard3">Keyboard3</option>
+                        </select>
+                    </div>
+
+                    <label for="keyboard color" class="col-sm-4">Keyboard color</label>
+                    <div class="col-sm-6">
+                        <select name="keyboardcolor" class="form-control">
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
+
+                    <label for="quantity" class="col-sm-4">Quantity</label>
+                    <div class="col-sm-6">
+                        <input type="number" class="form-control" name="quantity" min="1" placeholder="quantity" required>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6">
+                    <input type="submit" class="btn btn-warning">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

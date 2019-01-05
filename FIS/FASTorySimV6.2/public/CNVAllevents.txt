@@ -1,0 +1,95 @@
+	{
+        "id": "events",
+        "links": {
+            "self": "HostName/CNV/events",
+            "info": "HostName/CNV/events/info"
+        },
+        "class": "events",
+        "children": {
+            "Z1_Changed": {
+                "id": "Z1_Changed",
+				"meta":{
+					"deviceId": "Z1",
+					"deviceType": "Zone",
+					"sensorType": "presence",
+					"parentId": "CNV",
+					"parentType": "Conveyor"
+				},
+                "links": {
+                    "self": "HostName/CNV/events/Z1_Changed",
+                    "info": "HostName/CNV/events/Z1_Changed/info",
+                    "notifs": "HostName/CNV/events/Z1_Changed/notifs"
+                },
+				"class":"event",
+				"children":{}
+            },
+            "Z2_Changed": {
+                "id": "Z2_Changed",
+				"meta":{
+					"deviceId": "Z2",
+					"deviceType": "Zone",
+					"sensorType": "presence",
+					"parentId": "CNV",
+					"parentType": "Conveyor"
+				},
+                "links": {
+                    "self": "HostName/CNV/events/Z2_Changed",
+                    "info": "HostName/CNV/events/Z2_Changed/info",
+                    "notifs": "HostName/CNV/events/Z2_Changed/notifs"
+                },
+				"class":"event",
+				"children":{}
+            },
+            "Z3_Changed": {
+                "id": "Z3_Changed",
+				"meta":{
+					"deviceId": "Z3",
+					"deviceType": "Zone",
+					"sensorType": "presence",
+					"parentId": "CNV",
+					"parentType": "Conveyor"
+				},
+                "links": {
+                    "self": "HostName/CNV/events/Z3_Changed",
+                    "info": "HostName/CNV/events/Z3_Changed/info",
+                    "notifs": "HostName/CNV/events/Z3_Changed/notifs"
+                },
+				"class":"event",
+				"children":{}
+            },
+            "Z4_Changed": {
+                "id": "Z4_Changed",
+				"meta":{
+					"deviceId": "Z4",
+					"deviceType": "Zone",
+					"sensorType": "presence",
+					"parentId": "CNV",
+					"parentType": "Conveyor"
+				},
+                "links": {
+                    "self": "HostName/CNV/events/Z4_Changed",
+                    "info": "HostName/CNV/events/Z4_Changed/info",
+                    "notifs": "HostName/CNV/events/Z4_Changed/notifs"
+                },
+				"class":"event",
+				"children":{}
+            },
+            "Z5_Changed": {
+                "id": "Z5_Changed",
+				"meta":{
+					"deviceId": "Z5",
+					"deviceType": "Zone",
+					"sensorType": "presence",
+					"parentId": "CNV",
+					"parentType": "Conveyor"
+				},
+                "links": {
+                    "self": "HostName/CNV/events/Z5_Changed",
+                    "info": "HostName/CNV/events/Z5_Changed/info",
+                    "notifs": "HostName/CNV/events/Z5_Changed/notifs"
+                },
+				"class":"event",
+				"children":{}
+            }
+        }
+    }

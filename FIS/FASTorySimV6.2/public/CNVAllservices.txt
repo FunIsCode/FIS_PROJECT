@@ -1,0 +1,121 @@
+ {
+        "id": "services",
+        "links": {
+            "self": "HostName/CNV/services",
+            "info": "HostName/CNV/services/info",
+			"parent":"HostName/CNV"
+        },
+        "class": "services",
+        "children": {
+            "TransZone12": {
+                "id": "TransZone12",
+                "links": {
+                    "self": "HostName/CNV/services/TransZone12",
+                    "info": "HostName/CNV/services/TransZone12/info",
+                    "notifs": "HostName/CNV/services/TransZone12/notifs",
+					"parent":"HostName/CNV/services"
+                },
+                "class": "process",
+				"children":{}
+            },
+            "TransZone23": {
+                "id": "TransZone23",
+                "links": {
+                    "self": "HostName/CNV/services/TransZone23",
+                    "info": "HostName/CNV/services/TransZone23/info",
+                    "notifs": "HostName/CNV/services/TransZone23/notifs",
+					"parent":"HostName/CNV/services"
+                },
+                "class": "process",
+				"children":{}
+            },
+            "TransZone35": {
+                "id": "TransZone35",
+                "links": {
+                    "self": "HostName/CNV/services/TransZone35",
+                    "info": "HostName/CNV/services/TransZone35/info",
+                    "notifs": "HostName/CNV/services/TransZone35/notifs",
+					"parent":"HostName/CNV/services"
+                },
+                "class": "process",
+				"children":{}
+            },
+            "TransZone14": {
+                "id": "TransZone14",
+                "links": {
+                    "self": "HostName/CNV/services/TransZone14",
+                    "info": "HostName/CNV/services/TransZone14/info",
+                    "notifs": "HostName/CNV/services/TransZone14/notifs",
+					"parent":"HostName/CNV/services"
+                },
+                "class": "process",
+				"children":{}
+            },
+            "TransZone45": {
+                "id": "TransZone45",
+                "links": {
+                    "self": "HostName/CNV/services/TransZone45",
+                    "info": "HostName/CNV/services/TransZone45/info",
+                    "notifs": "HostName/CNV/services/TransZone45/notifs",
+					"parent":"HostName/CNV/services"
+                },
+                "class": "process",
+				"children":{}
+            },
+            "Z1": {
+                "id": "Z1",
+                "links": {
+                    "self": "HostName/CNV/services/Z1",
+                    "info": "HostName/CNV/services/Z1/info",
+                    "notifs": "HostName/CNV/services/Z1/notifs",
+					"parent":"HostName/CNV/services"
+                },
+                "class": "query",
+				"children":{}
+            },
+            "Z2": {
+                "id": "Z2",
+                "links": {
+                    "self": "HostName/CNV/services/Z2",
+                    "info": "HostName/CNV/services/Z2/info",
+                    "notifs": "HostName/CNV/services/Z2/notifs",
+					"parent":"HostName/CNV/services"
+                },
+                "class": "query",
+				"children":{}
+            },
+            "Z3": {
+                "id": "Z3",
+                "links": {
+                    "self": "HostName/CNV/services/Z3",
+                    "info": "HostName/CNV/services/Z3/info",
+                    "notifs": "HostName/CNV/services/Z3/notifs",
+					"parent":"HostName/CNV/services"
+                },
+                "class": "query",
+				"children":{}
+            },
+            "Z4": {
+                "id": "Z4",
+                "links": {
+                    "self": "HostName/CNV/services/Z4",
+                    "info": "HostName/CNV/services/Z4/info",
+                    "notifs": "HostName/CNV/services/Z4/notifs",
+					"parent":"HostName/CNV/services"
+                },
+                "class": "query",
+				"children":{}
+            },
+            "Z5": {
+                "id": "Z5",
+                "links": {
+                    "self": "HostName/CNV/services/Z5",
+                    "info": "HostName/CNV/services/Z5/info",
+                    "notifs": "HostName/CNV/services/Z5/notifs",
+					"parent":"HostName/CNV/services"
+                },
+                "class": "query",
+				"children":{}
+            }
+        }
+    }

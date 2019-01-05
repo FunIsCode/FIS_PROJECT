@@ -1,0 +1,33 @@
+{
+        "id": "services",
+        "links": {
+            "self": "HostName/SimROB7/services",
+            "info": "HostName/SimROB7/services/info",
+            "parent": "HostName/SimROB7"
+        },
+        "class": "services",
+        "children": {
+            "LoadPallet": {
+                "id": "LoadPallet",
+                "links": {
+                    "self": "HostName/SimROB7/services/LoadPallet",
+                    "info": "HostName/SimROB7/services/LoadPallet/info",
+                    "notifs": "HostName/SimROB7/services/LoadPallet/notifs",
+					"parent": "HostName/SimROB7/services"
+                },
+                "class": "process",
+				"children":{}
+            },
+            "UnloadPallet": {
+                "id": "UnloadPallet",
+                "links": {
+                    "self": "HostName/SimROB7/services/UnloadPallet",
+                    "info": "HostName/SimROB7/services/UnloadPallet/info",
+                    "notifs": "HostName/SimROB7/services/UnloadPallet/notifs",
+					"parent": "HostName/SimROB7/services"
+                },
+                "class": "process",
+				"children":{}
+            }
+        }
+    }

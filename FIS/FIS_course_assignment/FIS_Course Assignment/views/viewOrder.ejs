@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View order</title>
+</head>
+
+<body>
+<% include templates/navigation.ejs %>
+
+<h1 style="background-color:blue;color:white">Order</h1>
+<br>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 40%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+</style>
+
+<table>
+    <tr>
+        <th>Order Details</th>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td><%= data.name %></td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td><%= data.address%></td>
+    </tr>
+    <tr>
+        <td>Phone number:</td>
+        <td><%= data.phone %></td>
+    </tr>
+    <tr>
+        <td>Frame type:</td>
+        <td><%= data.frametype %></td>
+    </tr>
+    <tr>
+        <td>Frame Color:</td>
+        <td><%= data.framecolor %></td>
+    </tr>
+    <tr>
+        <td>Screen Type:</td>
+        <td><%= data.screentype %></td>
+    </tr>
+    <tr>
+        <td>Screen Color:</td>
+        <td><%= data.screencolor %></td>
+    </tr>
+    <tr>
+        <td>Keyboard Type:</td>
+        <td><%= data.keyboardtype %></td>
+    </tr>
+    <tr>
+        <td>Keyboard Color:</td>
+        <td><%= data.keyboardcolor %></td>
+    </tr>
+    <tr>
+        <td>Quantity:</td>
+        <td><%= data.quantity %></td>
+    </tr>
+</table>
+</body>
+</html>
+

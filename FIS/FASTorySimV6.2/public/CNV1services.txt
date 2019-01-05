@@ -1,0 +1,80 @@
+{
+        "id": "services",
+        "links": {
+            "self": "HostName/SimCNV1/services",
+            "info": "HostName/SimCNV1/services/info"
+        },
+        "class": "services",
+        "children": {
+            "TransZone12": {
+                "id": "TransZone12",
+                "links": {
+                    "self": "HostName/SimCNV1/services/TransZone12",
+                    "info": "HostName/SimCNV1/services/TransZone12/info",
+                    "notifs": "HostName/SimCNV1/services/TransZone12/notifs"
+                },
+                "class": "process",
+				"children":{}
+            },
+            "TransZone23": {
+                "id": "TransZone23",
+                "links": {
+                    "self": "HostName/SimCNV1/services/TransZone23",
+                    "info": "HostName/SimCNV1/services/TransZone23/info",
+                    "notifs": "HostName/SimCNV1/services/TransZone23/notifs"
+                },
+                "class": "process",
+				"children":{}
+            },
+            "TransZone35": {
+                "id": "TransZone35",
+                "links": {
+                    "self": "HostName/SimCNV1/services/TransZone35",
+                    "info": "HostName/SimCNV1/services/TransZone35/info",
+                    "notifs": "HostName/SimCNV1/services/TransZone35/notifs"
+                },
+                "class": "process",
+				"children":{}
+            },
+            "Z1": {
+                "id": "Z1",
+                "links": {
+                    "self": "HostName/SimCNV1/services/Z1",
+                    "info": "HostName/SimCNV1/services/Z1/info",
+                    "notifs": "HostName/SimCNV1/services/Z1/notifs"
+                },
+                "class": "query",
+				"children":{}
+            },
+            "Z2": {
+                "id": "Z2",
+                "links": {
+                    "self": "HostName/SimCNV1/services/Z2",
+                    "info": "HostName/SimCNV1/services/Z2/info",
+                    "notifs": "HostName/SimCNV1/services/Z2/notifs"
+                },
+                "class": "query",
+				"children":{}
+            },
+            "Z3": {
+                "id": "Z3",
+                "links": {
+                    "self": "HostName/SimCNV1/services/Z3",
+                    "info": "HostName/SimCNV1/services/Z3/info",
+                    "notifs": "HostName/SimCNV1/services/Z3/notifs"
+                },
+                "class": "query",
+				"children":{}
+            },
+            "Z5": {
+                "id": "Z5",
+                "links": {
+                    "self": "HostName/SimCNV1/services/Z5",
+                    "info": "HostName/SimCNV1/services/Z5/info",
+                    "notifs": "HostName/SimCNV1/services/Z5/notifs"
+                },
+                "class": "query",
+				"children":{}
+            }
+        }
+    }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order tracking</title>
+</head>
+
+<body>
+<% include templates/navigation.ejs %>
+
+<h1 style="background-color:blue;color:white">Production state</h1>
+<br>
+<h2 style=color:black;text-align:left;">Order in production:</h2>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 5px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+</style>
+<table>
+    <tr>
+        <th></th>
+        <th>Frame ordered</th>
+        <th>Frame built</th>
+        <th>Screen ordered</th>
+        <th>Screen built</th>
+        <th>Keyboard ordered</th>
+        <th>Keyboard built</th>
+        <th>Pallet ID</th>
+        <th>Location</th>
+        <th>Start time</th>
+
+    </tr>
+    <% for(var i = 0; i < data.length; i++){ %>
+    <tr>
+        <td><%= i + 1 %></td>
+        <td><%= data[i].frametype %>, <%= data[i].framecolor %></td>
+
+        <% if((data[i].frametype + ", " + data[i].framecolor) == data[i].frame ){ %>
+        <td><%= data[i].frame %></td>
+        <% } else { %>
+        <td style=color:red><b><%= data[i].frame %></b></td>
+        <% } %>
+
+        <td><%= data[i].screentype %>, <%= data[i].screencolor %></td>
+
+        <% if((data[i].screentype + ", " + data[i].screencolor) == data[i].screen ){ %>
+        <td><%= data[i].screen %></td>
+        <% } else { %>
+        <td style=color:red><b><%= data[i].screen %></b></td>
+        <% } %>
+
+        <td><%= data[i].keyboardtype %>, <%= data[i].keyboardcolor %></td>
+
+        <% if((data[i].keyboardtype + ", " + data[i].keyboardcolor) == data[i].keyboard ){ %>
+        <td><%= data[i].keyboard %></td>
+        <% } else { %>
+        <td style=color:red><b><%= data[i].keyboard %></b></td>
+        <% } %>
+
+        <td><%= data[i].id %></td>
+        <td><%= data[i].location %></td>
+        <td><%= data[i].prodStartTime %></td>
+        <% } %>
+    </tr>
+</table>
+
+</body>
+</html>
+
